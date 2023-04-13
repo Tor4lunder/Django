@@ -1,0 +1,7 @@
+<h1> Категорія: {{ category.name }} </h1>
+
+<ol>
+    {% for item in news %}
+        <li><a href="{% url 'news:news_detail' item.id %}"> {{ item.title }} </a></li>
+    {% endfor %}
+</ol>

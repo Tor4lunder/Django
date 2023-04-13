@@ -1,0 +1,8 @@
+<div>
+    <h1>Список категорій</h1>
+    <ol>
+        {% for category in categories %}
+            <li><a color="orange" href="{% url 'news:category' category.id %}"> {{ category.name }} </a></li>
+        {% endfor %}
+    </ol>
+</div>
